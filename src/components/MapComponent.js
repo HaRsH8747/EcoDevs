@@ -6,6 +6,8 @@ const mapContainerStyle = {
   width: '100%',
 };
 
+const mapsApi = process.env.GOOGLE_MAPS_API_KEY;
+
 const MapComponent = ({ setSelectedMarker, markers }) => {
   const [map, setMap] = useState(null);
 
@@ -30,7 +32,7 @@ const MapComponent = ({ setSelectedMarker, markers }) => {
   }, [markers, map]);
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyCX48Yb5B8VJJPyNI67kmGs_nuP3WUaK9I">
+    <LoadScript googleMapsApiKey={mapsApi}>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={10}
