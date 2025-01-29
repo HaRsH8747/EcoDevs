@@ -13,6 +13,7 @@ import LandAgreementCard from "./LandAgreementCard";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const apiUrl = process.env.REACT_APP_API_URL;
 
 const LandApplications = () => {
   const navigate = useNavigate();
@@ -80,7 +81,7 @@ const LandApplications = () => {
   const storedUserData = JSON.parse(localStorage.getItem("storedDBData"));
 
   useEffect(() => {
-    const apiUrl = process.env.REACT_APP_API_URL;
+  
     const fetchApplications = async () => {
 
       const response = await axios.get(
