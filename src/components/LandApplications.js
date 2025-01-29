@@ -80,8 +80,8 @@ const LandApplications = () => {
   const storedUserData = JSON.parse(localStorage.getItem("storedDBData"));
 
   useEffect(() => {
+    const apiUrl = process.env.REACT_APP_API_URL;
     const fetchApplications = async () => {
-      const apiUrl = process.env.REACT_APP_API_URL;
 
       const response = await axios.get(
         `${apiUrl}/api/landapplications`
