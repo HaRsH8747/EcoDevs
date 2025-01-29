@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.input-style{
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 20px;
+  border-color: aliceblue;
+  height: 45px;
+  margin-bottom: 15px;
+}
+.radio-style{
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 20px;
+  border-color: aliceblue;
+  height: 25px;
+  margin-bottom: 15px;
+}
+.button-style{
+  width: 100px;
+  height: 45px;
+  color: white;
+  border-radius: 10px;
+}
+
+
+.login-style{
+  border: solid 0px;
+  padding: 35px;
+}
+.shadow-style{
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px
+}
+
+.vertual-height{
+  height: 100vh;
+}
+
+.title-style{
+  width: 240px;
+  padding-left: 20px;
+  height: 40px;
+  border: solid 0px;
+  background: #374151;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+@font-face {
+  font-family: 'NavFont';
+  src: url('./fonts/hedvig_regular.ttf') format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
